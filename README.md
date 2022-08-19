@@ -7,7 +7,7 @@ Juego de Cartas 21
 A01276329/Juan Yael Avalos Mayorga
 
 ----------------------
-###Algoritmo
+Algoritmo
 
 Lo que voy hacer en este algoritmo es recrear el juego de cartas 21 entre 2 personas en python, para esto recrearé en el código los sig pasos para que el juego funcione
 
@@ -21,4 +21,4 @@ Lo que voy hacer en este algoritmo es recrear el juego de cartas 21 entre 2 pers
 8. Si La suma da menos de 21, se repetirán los pasos 6, 7 y 8.
 9. Cuando termine de jugar el primer jugador, la computadora guardará su número y empezará el mismo proceso con el segundo jugador.
 10. El Juego termina hasta que uno de los 2 logre sacar un 21 o que cuando los jugadores decidan quedarse con el número, en ese momento el programa va a comparar los 2 numeros y dará como ganador el participante que se acerque más a 21.
-11. Cuando alguno de los jugadores gane, el programa señalará al ganador y anunciará el fin del juego.
+11. Cuando alguno de los jugadores gane, el programa señalará al ganador y anunciará el fin del juego
