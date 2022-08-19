@@ -1,8 +1,8 @@
 # Ingenieria-Trabajos-y-Tareas
 
-#Avance 1
+Avance 1
 =============
-##Juego de Cartas 21
+Juego de Cartas 21
 -------------
 A01276329/Juan Yael Avalos Mayorga
 
