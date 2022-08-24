@@ -7,6 +7,8 @@ Juego de Cartas 21
 A01276329/Juan Yael Avalos Mayorga
 
 ----------------------
+
+El juego de 21 es un juego de cartas, donde 2 o más participantes. Este juego empieza cuando el qué pasa las cartas da 1 carta a cada 1 (El valor de las cartas como J, Q o K equivalen a 10). Después de esto, si los jugadores lo deciden, pueden llevarse otra carta. Si la suma de las cartas es arriba de 21, el jugador pierde. En este juego gana quien su suma le da 21 o quien se quede más cerca de este.
 Algoritmo
 
 Lo que voy hacer en este algoritmo es recrear el juego de cartas 21 entre 2 personas en python, para esto recrearé en el código los sig pasos para que el juego funcione
