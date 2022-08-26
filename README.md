@@ -25,7 +25,7 @@ Lo que voy hacer en este algoritmo es recrear el juego de cartas 21 entre 2 pers
 10. El Juego termina hasta que uno de los 2 logre sacar un 21 o que cuando los jugadores decidan quedarse con el número, en ese momento el programa va a comparar los 2 numeros y dará como ganador el participante que se acerque más a 21.
 11. Cuando alguno de los jugadores gane, el programa señalará al ganador y anunciará el fin del juego
 
-Avance 1
+Avance 2
 =============
 
 Operadores
