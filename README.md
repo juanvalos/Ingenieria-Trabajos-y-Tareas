@@ -24,10 +24,3 @@ Lo que voy hacer en este algoritmo es recrear el juego de cartas 21 entre 2 pers
 9. Cuando termine de jugar el primer jugador, la computadora guardará su número y empezará el mismo proceso con el segundo jugador.
 10. El Juego termina hasta que uno de los 2 logre sacar un 21 o que cuando los jugadores decidan quedarse con el número, en ese momento el programa va a comparar los 2 numeros y dará como ganador el participante que se acerque más a 21.
 11. Cuando alguno de los jugadores gane, el programa señalará al ganador y anunciará el fin del juego
-
-Avance 2
-=============
-
-Operadores
-------------------------
-Este programa será complejo, sin embargo las operaciones de este son muy sencillas. Aquí solo se usará 1 operador, el cual es "SUMA" (+). Este operador lo ocuparemos cuando la computadora vaya sumando los numeros de los jugadres y que cheque que no se excedan de 21. Este también lo ocuparé en una función donde a una variable se le vaya sumando 1 cada vez que un jugador participe, esto es con función de que los numeros pares hagan que un participante pueda jugar su turno, mientras que en los numeros impares el otro jugador juege.
