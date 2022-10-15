@@ -1,9 +1,23 @@
 """
 Juan Yael Avalos Mayorga // A01276329
+
 Este  es el código del juego 21, agregando listas anidadas
 """
 
 import random
+from random import shuffle
+
+lista_barajas = (
+[1] * 4 +  [2] * 4 +
+[3] * 4 + [4] * 4 +
+[5] * 4 + [6] * 4 +
+[7] * 4 + [8] * 4 +
+[9] * 4 + [10] * 4 +
+[10] * 4 + [10] * 4 +
+[10] * 4 
+)
+
+shuffle (lista_barajas)
 
 def print_menu () :
     print (" ")
@@ -60,8 +74,8 @@ options = print_menu()
 if options == 1:
 
     turno = 0
-    acum_cart1 = 0
-    acum_cart2 = 0
+    acum_card1 = 0
+    acum_card2 = 0
     player1_list = []
     player2_list = []
 
@@ -72,28 +86,26 @@ if options == 1:
             print (" ")
             print ("Es turno del Jugador 1 ----->")
             print (" ")
-            player_m = player_menu ()
+            player_m1 = player_menu ()
             
-            if player_m == 1 :
-                acum_cart1 += random.randint (1 , 10)
+            if player_m1 == 1 :
+                acum_card1 += lista_barajas.pop ()
                 print (" ")
-                print (f"el valor de sus cartas es  {acum_cart1}")
+                print (f"el valor de sus cartas es  {acum_card1}")
                 print (" ")
-                player1_list.append (acum_cart1)
+                player1_list.append (acum_card1)
             
-            if acum_cart1 > 21 :
+            if acum_card1 > 21 :
                 print (" ")
                 print ("Jugador 1, usted se ha superado el límite de valor en sus cartas. Este juego ha acabado.")
                 print (" ")
                 break
 
-            if player_m == 2 :
+            if player_m1 == 2 :
                 print (" ")
-                print (f"el valor final de sus cartas es  {acum_cart1}")
+                print (f"el valor final de sus cartas es  {acum_card1}")
                 print (" ")
-                break
-
-
+                
 
         if turno % 2 == 1 :
         
@@ -101,25 +113,27 @@ if options == 1:
             print (" ")
             print ("Es turno del Jugador 2 ----->")
             print (" ")
-            player_m = player_menu ()
+            player_m2 = player_menu ()
             
-            if player_m == 1 :
-                acum_cart2 += random.randint (1 , 10)
+            if player_m2 == 1 :
+                acum_card2 += lista_barajas.pop ()
                 print (" ")
-                print (f"el valor de sus cartas es  {acum_cart2}")
+                print (f"el valor de sus cartas es  {acum_card2}")
                 print (" ")
-                player2_list.append (acum_cart2)
+                player2_list.append (acum_card2)
             
-            if acum_cart2 > 21 :
+            if acum_card2 > 21 :
                 print (" ")
                 print ("Jugador 2, usted se ha superado el límite de valor en sus cartas. Este juego ha acabado.")
                 print (" ")
                 break
 
-            if player_m == 2 :
+            if player_m2 == 2 :
                 print (" ")
-                print (f"el valor final de sus cartas es  {acum_cart2}")
+                print (f"el valor final de sus cartas es  {acum_card2}")
                 print (" ")
+        
+            if (player_m1 == 2) and (player_m2 == 2) :
                 break
 
 
