@@ -1,26 +1,23 @@
 """
-    En este Avance agregaré estructuras de decisión en mi programa. 
+En este avance implementare estructuras de repetición a mi proyecto usando while
 """
+
 import random
 
 
-#Esta es la función de la suma de las cartas
-def suma_cartas():
 
-    num1=random.randint(1,10)
-    num2=num1 + random.randint(1,10)
+# Definimos una función para imprimir el valor de que el jugador tiene con sus cartas
 
-    iniciar_juego=input("Bienvenidos a este juego de cartas llamado 21, si desea jugar presione 1: ")
-    
-    if iniciar_juego =="1" :
-        print (f"Su carta tiene un valor de {num1}")
-        cont_juego=input("Si desea continuar presione 1: ")
+def print_cart (num) :
 
-        if cont_juego=="1":
-            print(f"La suma de sus numeros es {num2}")
-            
-#esta es la función del contador para el turno del jugador
-def contador(): 
+        print (f"Su cartas tienen un valor de {num}")
+        print (" ")
+
+
+
+# Definimos una función para el contador para el turno del jugador
+
+def contador() : 
 
     n=0
     turno=n+1
@@ -31,5 +28,103 @@ def contador():
         if turno %2 == 0:
             print("es turno del jugador 2")
 
-suma_cartas()
-contador()
+
+
+# Definimos una función que sirva  para imprimir el valor final de las cartas del jugador
+
+def cart_s ( num ) :
+        print (f"El numero final de sus cartas es {num}")
+        print (" ")
+
+
+
+# Definimos una función para imprimir que el jugador se excedió en el valor de sus cartas
+def cart_e ( num ):
+        print (f"Usted se ha excedido del valor máximo para ganar con {num} en sus cartas")
+        print (" ")
+
+
+
+# Definimos una función para el juego para el jugador 1, implementando while
+
+def player1_game ():
+    
+    print ( "Es turno del jugador 1, empecemos con su juego" )
+    print ( " " )
+    print_cart (num1)
+
+    i=0 
+    
+
+    while (i < 21) :
+
+        cont_game = int (input("Si desea tomar otra carta presione 1, y si desea quedarse con el valor de sus cartas presione 2: "))
+        print (" ")
+
+        if cont_game == 1 :
+            sum_cart= i + num1
+            i= sum_cart + random.randint(1,10)
+            print_cart (i)
+        
+        if cont_game == 2 :
+            cart_s (i)
+            break
+
+        if i > 21 :
+            cart_s ( i )
+            cart_e ( i )
+            break
+
+
+    print ( " " )
+    print ( " " )
+    print ( " " )
+
+
+# Definimos una función para el juego para el jugador 2, implementando while
+
+def player2_game ():
+    
+    print ( "Es turno del jugador 2, empecemos con su juego" )
+    print ( " " )
+    print_cart (num2)
+
+    i=0 
+    
+
+    while (i < 21) :
+
+        cont_game = int (input("Si desea tomar otra carta presione 1, y si desea quedarse con el valor de sus cartas presione 2: "))
+        print (" ")
+
+        if cont_game == 1 :
+            sum_cart= i + num2
+            i= sum_cart + random.randint(1,10)
+            print_cart (i)
+        
+        if cont_game == 2 :
+            cart_s (i)
+            break
+
+        if i > 21 :
+            cart_s ( i )
+            cart_e ( i )
+            break
+ 
+ 
+    print ( " " )
+    print ( " " )
+    print ( " " )            
+
+# Aqui iniciamos el Juego
+
+in_game = int (input("Bienvenidos a este juego de cartas llamado 21, si desea jugar presione 1: "))
+print (" ")
+
+num1 = random.randint(1,10)
+num2 = random.randint(1,10)
+
+if in_game == 1 :
+   
+   player1_game()
+   player2_game()
