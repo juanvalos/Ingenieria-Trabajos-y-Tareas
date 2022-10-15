@@ -1,5 +1,7 @@
+
+
 """
-    En este Avance crearé las funciones que ocuparé en mi proyecto, para esto usaré el codygo y los operadores del Avance 2
+    En este Avance agregaré estructuras de decisión en mi programa. 
 """
 import random
 
