@@ -1,5 +1,3 @@
-
-
 """"
 Este programa será complejo, sin embargo las operaciones de este son muy sencillas.
 Aquí solo se usará 2 operadores, el cual es "SUMA" (+) y "MODULO" (%).
