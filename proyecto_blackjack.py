@@ -1,7 +1,7 @@
 """
 Juan Yael Avalos Mayorga // A01276329
 
-Este  es el código del juego 21, agregando listas anidadas
+Este  es el código del juego "Blackjack".
 """
 
 import random
