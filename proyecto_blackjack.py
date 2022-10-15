@@ -1,5 +1,5 @@
 """
-En este avance implementare estructuras de repetición a mi proyecto usando while
+En este avance implementaré listas a mi proyecto
 """
 
 import random
@@ -53,11 +53,11 @@ def player1_game ():
     print ( " " )
     print_cart (num1)
 
-    i=0 
-    
+    i = 0
+    player_list = [num1]
 
     while (i < 21) :
-
+        
         cont_game = int (input("Si desea tomar otra carta presione 1, y si desea quedarse con el valor de sus cartas presione 2: "))
         print (" ")
 
@@ -65,35 +65,37 @@ def player1_game ():
             sum_cart= i + num1
             i= sum_cart + random.randint(1,10)
             print_cart (i)
-        
+            player_list.append (i)
+            
         if cont_game == 2 :
             cart_s (i)
+            print (f"La evolución de su juego se ve así: {player_list}")
             break
 
         if i > 21 :
-            cart_s ( i )
             cart_e ( i )
+            print (f"La evolución de su juego se ve así: {player_list}")
             break
 
-
+ 
     print ( " " )
     print ( " " )
-    print ( " " )
+    print ( " " )            
 
 
 # Definimos una función para el juego para el jugador 2, implementando while
 
 def player2_game ():
-    
+     
     print ( "Es turno del jugador 2, empecemos con su juego" )
     print ( " " )
     print_cart (num2)
 
-    i=0 
-    
+    i = 0
+    player_list = [num2]
 
     while (i < 21) :
-
+        
         cont_game = int (input("Si desea tomar otra carta presione 1, y si desea quedarse con el valor de sus cartas presione 2: "))
         print (" ")
 
@@ -101,16 +103,18 @@ def player2_game ():
             sum_cart= i + num2
             i= sum_cart + random.randint(1,10)
             print_cart (i)
-        
+            player_list.append (i)
+            
         if cont_game == 2 :
             cart_s (i)
+            print (f"La evolución de su juego se ve así: {player_list}")
             break
 
         if i > 21 :
-            cart_s ( i )
             cart_e ( i )
+            print (f"La evolución de su juego se ve así: {player_list}")
             break
- 
+
  
     print ( " " )
     print ( " " )
